@@ -48,7 +48,7 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-6 ">
               <div className="work-box">
                 <a href={charity} data-lightbox="gallery-vmarine">
                   <div className="work-img">
@@ -118,7 +118,7 @@ class Portfolio extends React.Component {
                 </a>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-6 ">
               <div className="work-box">
                 <a href={hrms} data-lightbox="gallery-aguadeluz">
                   <div className="work-img">
@@ -174,7 +174,7 @@ class Portfolio extends React.Component {
                 </a>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-6 ">
               <div className="work-box">
                 <a href={school} data-lightbox="gallery-todo">
                   <div className="work-img">
@@ -242,7 +242,7 @@ class Portfolio extends React.Component {
                 </a>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-6 ">
               <div className="work-box">
                 <a href={stock} data-lightbox="gallery-mf">
                   <div className="work-img">
