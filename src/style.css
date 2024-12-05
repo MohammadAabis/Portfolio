@@ -728,6 +728,7 @@ PORTFOLIO
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
+  height: 700px;
 }
 
 .work-box:hover img {
@@ -738,7 +739,7 @@ PORTFOLIO
 .work-img {
   display: block;
   overflow: hidden;
-  height: auto;
+  height: 220px;
 }
 
 .work-img img {
@@ -747,6 +748,7 @@ PORTFOLIO
 
 .work-content {
   padding: 2rem 3% 1rem 4%;
+  margin-top: 3px;
 }
 
 .work-content .w-more {
@@ -1031,4 +1033,12 @@ BUTTON
   .back-to-top {
     bottom: 15px;
   }
+}
+
+.sending{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
 }

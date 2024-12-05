@@ -22,6 +22,15 @@ import hrms1 from "../img/hrms-addEmp.png"
 import hrms2 from "../img/hrms-dash.png"
 import hrms3 from "../img/hrms-list.png"
 
+// import school images
+import school from "../img/school-main.png"
+import school1 from "../img/school-login.png"
+import school2 from "../img/school-home.png"
+import school3 from "../img/school-addstudent.png"
+import school4 from "../img/school-addstudent.png"
+import school5 from "../img/school-addUser.png"
+
+
 class Portfolio extends React.Component {
   render() {
     return (
@@ -51,7 +60,7 @@ class Portfolio extends React.Component {
                         <h2 className="w-title">We Protect You</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap ReactJS NodeJS
+                            HTML5 CSS3 Bootstrap ReactJS NodeJS  SQL Server
                           </span>
                         </div>                        
                       </div>
@@ -64,7 +73,13 @@ class Portfolio extends React.Component {
                   </div>
                 </a>
                 <div className="container">
-                  <span className="detail">write details here</span>
+                  <span className="detail">
+                    We Protect You is a charitable web application developed to support indigent. The platform allows
+                    indigent, donors, and NGOs to register. Indigent can post their specific requirements, such 
+                    as groceries, money, or medicines, based on predefined categories. Donors and NGOs can then provide the necessary 
+                    assistance. The administrator reviews and approves posts to ensure their validity. Additionally, NGOs can contact 
+                    donors to request support for their charitable activities.
+                  </span>
                 </div>
                 <a
                   href={charity1}
@@ -112,10 +127,10 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">HRM System</h2>
+                        <h2 className="w-title">HRMS for OFFICE</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap ReactJS NodeJS
+                            HTML5 CSS3 Bootstrap ReactJS NodeJS PostgreSQL
                           </span>{" "}
                         </div>
                       </div>
@@ -128,7 +143,13 @@ class Portfolio extends React.Component {
                   </div>
                 </a>
                 <div className="container">
-                  <span className="detail">write details here</span>
+                  <span className="detail">
+                    We developed an advanced Human Resource Management System (HRMS) designed to efficiently manage 
+                    and maintain comprehensive records of office and employees. This system streamlines the tracking of 
+                    employee information, equipment inventory, and related administrative tasks, ensuring seamless operations and 
+                    enhanced productivity. The HRMS incorporates robust features for data management, and reporting, 
+                    making it an indispensable tool for modern office environments.
+                  </span>
                 </div>
                 <a
                   href={hrms1}
@@ -155,79 +176,17 @@ class Portfolio extends React.Component {
             </div>
             <div className="col-md-4">
               <div className="work-box">
-                <a href={stock} data-lightbox="gallery-todo">
+                <a href={school} data-lightbox="gallery-todo">
                   <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
+                    <img src={school} alt="" className="img-fluid" />
                   </div>
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">School Management System</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack ReactJS
-                          </span>
-                          {/*} / <span className="w-date">18 Sep. 2018</span>*/}
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={stock} data-lightbox="gallery-medlingos">
-                  <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            Bootstrap ReactJS GoogleAPI
+                            HTML5 CSS3 Bootstrap ReactJS NodeJs PostgreSQL
                           </span>
                         </div>
                       </div>
@@ -239,96 +198,44 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
+                <div className="container">
+                  <span className="detail">
+                    Our school management system is developed to efficiently handle and manage all school-related 
+                    records. This system is basically to maintains student records such as attendance, fees, admissions, and examinations but 
+                    also streamlines administrative processes.
+                  </span>
+                </div>
                 <a
-                  href={stock1}
-                  data-lightbox="gallery-medlingos"
+                  href={school1}
+                  data-lightbox="gallery-todo"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={stock2}
-                  data-lightbox="gallery-medlingos"
+                  href={school2}
+                  data-lightbox="gallery-todo"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={stock3}
-                  data-lightbox="gallery-medlingos"
+                  href={school3}
+                  data-lightbox="gallery-todo"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={stock4}
-                  data-lightbox="gallery-medlingos"
+                  href={school4}
+                  data-lightbox="gallery-todo"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
-                  href={stock5}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="work-box">
-                <a href={stock} data-lightbox="gallery-smth">
-                  <div className="work-img">
-                    <img src={stock} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">MERN</span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-smth"
+                  href={school5}
+                  data-lightbox="gallery-todo"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
@@ -344,10 +251,10 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">BidsForce</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap MERN
+                            ReactJS NextJS PostgreSQL FastAPI Tailwind
                           </span>
                         </div>
                       </div>
@@ -359,6 +266,15 @@ class Portfolio extends React.Component {
                     </div>
                   </div>
                 </a>
+                <div className="container">
+                  <span className="detail">
+                    Bidsforce was developed to streamline and manage the bidding process efficiently. This platform includes 
+                    comprehensive features to handle RFX/RFQ processes, ensuring smooth and transparent operations. It enables 
+                    users to create and manage requests for quotations (RFQ) and requests for proposals (RFP), while also 
+                    facilitating vendor evaluations and bid comparisons. The system supports secure document management, 
+                    tracking of bid status, and automated notifications, which help in maintaining effective communication with vendors.
+                  </span>
+                </div>
                 <a
                   href={stock1}
                   data-lightbox="gallery-mf"
