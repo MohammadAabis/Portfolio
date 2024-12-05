@@ -51,8 +51,12 @@ const Contact =() => {
                     <div className="title-box-2">
                       <h5 className="title-left">Send A Message</h5>
                     </div>
+                    {sending &&
                     <div className="bg-info sending">{sending}</div>
+                    }
+                    {result &&
                     <div className="bg-success sendiing">{result}</div>
+                    }
                     <div>
                       <form
                         onSubmit={onSubmit}
