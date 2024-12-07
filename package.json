@@ -14,7 +14,8 @@
     "react-scripts": "^5.0.1",
     "react-typed": "^1.1.2",
     "sass": "^1.81.0",
-    "typed.js": "^2.0.10"
+    "typed.js": "^2.0.10",
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
     "predeploy": "npm run build",

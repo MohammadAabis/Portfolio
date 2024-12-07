@@ -1,28 +1,51 @@
 import React from "react";
-import stock from "../img/about-img.jpg"
+import stock from "../img/about-img.jpg";
 
 class About extends React.Component {
   constructor() {
     super();
-    this.state = {      
+    this.state = {
       about_me: [
         {
           id: "first-p-about",
-          content: <p className="text-secondary">Hello!</p>
+          content: <p className="text-secondary">Hello!</p>,
         },
         {
           id: "second-p-about",
-          content: <p className="text-secondary">This is Mohammad Aabis, a passionate web developer who is always eager to learn new things and keep myself updated with the latest technology.</p>
+          content: (
+            <p className="text-secondary">
+              This is Mohammad Aabis, a passionate web developer who is always
+              eager to learn new things and keep myself updated with the latest
+              technology.
+            </p>
+          ),
         },
         {
           id: "third-p-about",
-          content: <p className="text-secondary">I chose this field as a career because when I first started coding and even making simple console programs, it felt like magic. I gradually fell in love with coding because of this magical feeling.</p>
+          content: (
+            <p className="text-secondary">
+              I chose this field as a career because when I first started coding
+              and even making simple console programs, it felt like magic. I
+              gradually fell in love with coding because of this magical
+              feeling.
+            </p>
+          ),
         },
         {
           id: "third-p-about",
-          content: <p className="text-secondary">As a <strong>NodeJS</strong> and <strong>NextJS</strong> developer, I have more than 2 years of experience in web development. During these years, I have mostly worked with teams and sometimes alone. I developed scalable projects by optimizing workflows and enhancing data accessibility. Additionally, I have successfully implemented various features that significantly improved user experience and increased client satisfaction.</p>
-        }
-      ]
+          content: (
+            <p className="text-secondary">
+              As a <strong>NodeJS</strong> and <strong>NextJS</strong>{" "}
+              developer, I have more than 2 years of experience in web
+              development. During these years, I have mostly worked with teams
+              and sometimes alone. I developed scalable projects by optimizing
+              workflows and enhancing data accessibility. Additionally, I have
+              successfully implemented various features that significantly
+              improved user experience and increased client satisfaction.
+            </p>
+          ),
+        },
+      ],
     };
   }
 
@@ -55,7 +78,7 @@ class About extends React.Component {
                     <div className="about-sec">
                       <div className="about-sec-img">
                         <img src={stock} alt="" className="img-fluid" />
-                      </div>                     
+                      </div>
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -63,7 +86,7 @@ class About extends React.Component {
                       <div className="title-box-2">
                         <h5 className="title-left">About Me</h5>
                       </div>
-                      {this.state.about_me.map(content => {
+                      {this.state.about_me.map((content) => {
                         return (
                           <p className="lead" key={content.id}>
                             {content.content}

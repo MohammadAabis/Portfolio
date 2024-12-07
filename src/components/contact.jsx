@@ -1,40 +1,37 @@
 import React, { useState } from "react";
 import imageOverlay from "../img/earth.jpg";
 
-
-const Contact =() => {
+const Contact = () => {
   const [result, setResult] = useState("");
   const [sending, setSending] = useState("");
-  
+
   const onSubmit = async (event) => {
     event.preventDefault();
     setSending("Sending....");
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
 
     const response = await fetch("http://localhost:7000/contact", {
       method: "POST",
-      body: JSON.stringify({name, email, subject, message})
+      body: JSON.stringify({ name, email, subject, message }),
     });
     const result1 = await response.json();
 
     if (result1.data.success === true) {
-      setSending('')
+      setSending("");
       setResult("Form Submitted Successfully");
-      setTimeout(()=>{
-          setResult('')
-      },2000) 
+      setTimeout(() => {
+        setResult("");
+      }, 2000);
     } else {
       console.log("Error", response);
       setResult("Error in form submission");
     }
   };
-    
-  
+
   return (
     <section
       className="paralax-mf footer-paralax bg-image sect-mt4 route"
@@ -51,17 +48,14 @@ const Contact =() => {
                     <div className="title-box-2">
                       <h5 className="title-left">Send A Message</h5>
                     </div>
-                    {sending &&
-                    <div className="bg-info sending">{sending}</div>
-                    }
-                    {result &&
-                    <div className="bg-success sendiing">{result}</div>
-                    }
+                    {sending && (
+                      <div className="bg-info sending">{sending}</div>
+                    )}
+                    {result && (
+                      <div className="bg-success sendiing">{result}</div>
+                    )}
                     <div>
-                      <form
-                        onSubmit={onSubmit}
-                        className="contactForm"
-                      >
+                      <form onSubmit={onSubmit} className="contactForm">
                         <div className="row">
                           <div className="col-md-12 mb-3">
                             <div className="form-group">
@@ -181,14 +175,13 @@ const Contact =() => {
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <div className="copyright-box">
-              </div>
+              <div className="copyright-box"></div>
             </div>
           </div>
         </div>
       </footer>
     </section>
   );
-}
+};
 
 export default Contact;
