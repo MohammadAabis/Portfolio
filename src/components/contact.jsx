@@ -1,36 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import imageOverlay from "../img/earth.jpg";
 
 const Contact = () => {
-  // const [result, setResult] = useState("");
-  // const [sending, setSending] = useState("");
+  const [result, setResult] = useState("");
+  const [sending, setSending] = useState("");
 
-  // const onSubmit = async (event) => {
-  //   event.preventDefault();
-  //   setSending("Sending....");
-
-  //   const formData = new FormData(event.target);
-  //   formData.append("access_key", "your-secret-key");
+  const secretKey = process.env.REACT_APP_SECRET_KEY;
   
-  //   const response = await fetch("https://api.web3forms.com/submit", {
-  //     method: "POST",
-  //     body: formData
-  //   });
 
-  //   const data = await response.json();
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setSending("Sending....");
 
-  //   if (data.success) {
-  //     setSending("");
-  //     setResult("Form Submitted Successfully");
+    const formData = new FormData(event.target);
+    formData.append("access_key", secretKey);
 
-  //     setTimeout(() => {
-  //       setResult("");
-  //     }, 2000);
-  //   } else {
-  //     console.log("Error", response);
-  //     setResult("Error in form submission");
-  //   }
-  // };
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setSending("");
+      setResult("Form Submitted Successfully");
+
+      setTimeout(() => {
+        setResult("");
+      }, 2000);
+    } else {
+      console.log("Error", response);
+      setResult("Error in form submission");
+    }
+  };
 
   return (
     <section
@@ -48,14 +51,14 @@ const Contact = () => {
                     <div className="title-box-2">
                       <h5 className="title-left">Send A Message</h5>
                     </div>
-                    {/* {sending && (
+                    {sending && (
                       <div className="bg-info sending">{sending}</div>
                     )}
                     {result && (
                       <div className="bg-success sendiing">{result}</div>
-                    )} */}
+                    )}
                     <div>
-                      <form className="contactForm" method="POST" data-netlify="true">
+                      <form onSubmit={onSubmit} className="contactForm">
                         <div className="row">
                           <div className="col-md-12 mb-3">
                             <div className="form-group">
@@ -69,6 +72,7 @@ const Contact = () => {
                                 data-msg="Please enter at least 4 chars"
                                 required
                               />
+                              <div className="validation">{result}</div>
                             </div>
                           </div>
                           <div className="col-md-12 mb-3">
@@ -83,6 +87,7 @@ const Contact = () => {
                                 data-msg="Please enter a valid email"
                                 required
                               />
+                              <div className="validation"></div>
                             </div>
                           </div>
                           <div className="col-md-12 mb-3">
@@ -97,6 +102,7 @@ const Contact = () => {
                                 data-msg="Please enter at least 8 chars of subject"
                                 required
                               />
+                              <div className="validation"></div>
                             </div>
                           </div>
                           <div className="col-md-12 mb-3">
@@ -111,6 +117,7 @@ const Contact = () => {
                                 placeholder="Message"
                                 required
                               ></textarea>
+                              <div className="validation"></div>
                             </div>
                           </div>
                           <div className="col-md-12">
