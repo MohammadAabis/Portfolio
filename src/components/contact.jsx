@@ -9,20 +9,20 @@ const Contact = () => {
     event.preventDefault();
     setSending("Sending....");
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
-
-    const response = await fetch("http://localhost:7000/contact", {
+    const formData = new FormData(event.target);
+    formData.append("access_key", "your-secret-key");
+  
+    const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: JSON.stringify({ name, email, subject, message }),
+      body: formData
     });
-    const result1 = await response.json();
 
-    if (result1.data.success === true) {
+    const data = await response.json();
+
+    if (data.success) {
       setSending("");
       setResult("Form Submitted Successfully");
+
       setTimeout(() => {
         setResult("");
       }, 2000);
