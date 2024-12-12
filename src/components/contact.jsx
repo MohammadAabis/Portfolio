@@ -55,7 +55,7 @@ const Contact = () => {
                       <div className="bg-success sendiing">{result}</div>
                     )} */}
                     <div>
-                      <form className="contactForm" name="contact" netlify>
+                      <form className="contactForm" method="POST" data-netlify="true">
                         <div className="row">
                           <div className="col-md-12 mb-3">
                             <div className="form-group">
@@ -69,7 +69,6 @@ const Contact = () => {
                                 data-msg="Please enter at least 4 chars"
                                 required
                               />
-                              {/* <div className="validation">{result}</div> */}
                             </div>
                           </div>
                           <div className="col-md-12 mb-3">
@@ -84,7 +83,6 @@ const Contact = () => {
                                 data-msg="Please enter a valid email"
                                 required
                               />
-                              <div className="validation"></div>
                             </div>
                           </div>
                           <div className="col-md-12 mb-3">
@@ -99,7 +97,6 @@ const Contact = () => {
                                 data-msg="Please enter at least 8 chars of subject"
                                 required
                               />
-                              <div className="validation"></div>
                             </div>
                           </div>
                           <div className="col-md-12 mb-3">
@@ -114,7 +111,6 @@ const Contact = () => {
                                 placeholder="Message"
                                 required
                               ></textarea>
-                              <div className="validation"></div>
                             </div>
                           </div>
                           <div className="col-md-12">
