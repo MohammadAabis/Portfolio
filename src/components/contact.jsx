@@ -4,8 +4,6 @@ import imageOverlay from "../img/earth.jpg";
 const Contact = () => {
   const [result, setResult] = useState("");
   const [sending, setSending] = useState("");
-
-  const secretKey = process.env.REACT_APP_SECRET_KEY;
   
 
   const onSubmit = async (event) => {
@@ -13,7 +11,7 @@ const Contact = () => {
     setSending("Sending....");
 
     const formData = new FormData(event.target);
-    formData.append("access_key", secretKey);
+    formData.append("access_key", 'eb0432bc-0d7b-412d-a876-af1b54a66bc9');
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
