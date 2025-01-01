@@ -17,7 +17,7 @@ const Resume = () => {
             <div className="box-shadow-full">
               <div className="d-flex justify-content-center align-items-center">
                 <iframe
-                  src="/Resume(D-24).pdf"
+                  src="/Aabis_Resume.pdf"
                   width="100%"
                   height="600px"
                   title="Resume"
