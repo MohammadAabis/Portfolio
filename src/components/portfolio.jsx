@@ -3,7 +3,6 @@ import React from "react";
 //import bidsforce images
 import bidsforce from "../img/bidsforce-login.png";
 
-
 //import we protect you images
 import charity from "../img/main.png";
 import charity1 from "../img/signup.png";
@@ -26,6 +25,16 @@ import school3 from "../img/school-addstudent.png";
 import school4 from "../img/school-addstudent.png";
 import school5 from "../img/school-addUser.png";
 
+// import E-commerce images
+import E_commerce from "../img/E-com_main.png";
+import E_commerce1 from "../img/E-com_slider.png";
+import E_commerce2 from "../img/E-com_footer.png";
+import E_commerce3 from "../img/E-com_mob1.png";
+import E_commerce4 from "../img/E-com_mob2.png";
+import E_commerce5 from "../img/E-com_cart.png";
+import E_commerce6 from "../img/E-com_form.png";
+import E_commerce7 from "../img/E-com_stripe.png";
+
 class Portfolio extends React.Component {
   render() {
     return (
@@ -41,6 +50,278 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div className="row">
+
+            {/* Project E-Commerce */}
+            <div className="col-md-6 ">
+              <div className="work-box">
+                <a href={E_commerce} data-lightbox="gallery-aguadeluz">
+                  <div className="work-img">
+                    <img src={E_commerce} alt="" className="img-fluid" />
+                  </div>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">KAIRA</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">
+                            ReactJS NODEJS TailwindCSS MONGODB EXPRESSJS STRIPE
+                          </span>
+                        </div>
+                      </div>
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="ion-ios-plus-outline"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div className="container">
+                  <span className="detail">
+                    Developed a scalable E-commerce website using with modern
+                    React.js and Tailwind CSS. I Designed reusable components to
+                    ensure maintainability and scalability across the
+                    application. For server side I used Node.js and to connect
+                    backend and frontend I used Express.js. For payment gateway
+                    I used Stripe for secure and seamless checkout experience.
+                  </span>
+                </div>
+                <a
+                  href={E_commerce1}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={E_commerce2}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={E_commerce3}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={E_commerce4}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={E_commerce5}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={E_commerce6}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={E_commerce7}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+              </div>
+            </div>
+
+            {/* Project BidsForce */}
+            <div className="col-md-6 ">
+              <div className="work-box">
+                <a href={bidsforce} data-lightbox="gallery-mf">
+                  <div className="work-img">
+                    <img src={bidsforce} alt="" className="img-fluid" />
+                  </div>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">BidsForce</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">
+                            ReactJS NextJS PostgreSQL FastAPI Tailwind
+                          </span>
+                        </div>
+                      </div>
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="ion-ios-plus-outline"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div className="container">
+                  <span className="detail">
+                    Bidsforce was developed to streamline and manage the bidding
+                    process efficiently. This platform includes comprehensive
+                    features to handle RFX/RFQ processes, ensuring smooth and
+                    transparent operations. It enables users to create and
+                    manage requests for quotations (RFQ) and requests for
+                    proposals (RFP), while also facilitating vendor evaluations
+                    and bid comparisons. The system supports secure document
+                    management, tracking of bid status, and automated
+                    notifications, which help in maintaining effective
+                    communication with vendors.
+                  </span>
+                </div>
+                {/* <a
+                  href={stock1}
+                  data-lightbox="gallery-mf"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a> */}
+              </div>
+            </div>
+
+            {/* Project HRMS for OFFICE */}
+            <div className="col-md-6 ">
+              <div className="work-box">
+                <a href={hrms} data-lightbox="gallery-aguadeluz">
+                  <div className="work-img">
+                    <img src={hrms} alt="" className="img-fluid" />
+                  </div>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">HRMS for OFFICE</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">
+                            HTML5 CSS3 Bootstrap ReactJS NodeJS PostgreSQL
+                          </span>{" "}
+                        </div>
+                      </div>
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="ion-ios-plus-outline"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div className="container">
+                  <span className="detail">
+                    We developed an advanced Human Resource Management System
+                    (HRMS) designed to efficiently manage and maintain
+                    comprehensive records of office and employees. This system
+                    streamlines the tracking of employee information, equipment
+                    inventory, and related administrative tasks, ensuring
+                    seamless operations and enhanced productivity. The HRMS
+                    incorporates robust features for data management, and
+                    reporting, making it an indispensable tool for modern office
+                    environments.
+                  </span>
+                </div>
+                <a
+                  href={hrms1}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={hrms2}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={hrms3}
+                  data-lightbox="gallery-aguadeluz"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+              </div>
+            </div>
+
+            {/* Project School Management System */}
+            <div className="col-md-6 ">
+              <div className="work-box">
+                <a href={school} data-lightbox="gallery-todo">
+                  <div className="work-img">
+                    <img src={school} alt="" className="img-fluid" />
+                  </div>
+                  <div className="work-content">
+                    <div className="row">
+                      <div className="col-sm-8">
+                        <h2 className="w-title">School Management System</h2>
+                        <div className="w-more">
+                          <span className="w-ctegory">
+                            HTML5 CSS3 Bootstrap ReactJS NodeJs PostgreSQL
+                          </span>
+                        </div>
+                      </div>
+                      <div className="col-sm-4">
+                        <div className="w-like">
+                          <span className="ion-ios-plus-outline"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div className="container">
+                  <span className="detail">
+                    Our school management system is developed to efficiently
+                    handle and manage all school-related records. This system is
+                    basically to maintains student records such as attendance,
+                    fees, admissions, and examinations but also streamlines
+                    administrative processes.
+                  </span>
+                </div>
+                <a
+                  href={school1}
+                  data-lightbox="gallery-todo"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={school2}
+                  data-lightbox="gallery-todo"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={school3}
+                  data-lightbox="gallery-todo"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={school4}
+                  data-lightbox="gallery-todo"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+                <a
+                  href={school5}
+                  data-lightbox="gallery-todo"
+                  style={{ display: "none" }}
+                >
+                  jsx-a11y/anchor-has-content warning
+                </a>
+              </div>
+            </div>
+
+            {/* Project We Protect You */}
             <div className="col-md-6 ">
               <div className="work-box">
                 <a href={charity} data-lightbox="gallery-vmarine">
@@ -113,183 +394,6 @@ class Portfolio extends React.Component {
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
-              </div>
-            </div>
-            <div className="col-md-6 ">
-              <div className="work-box">
-                <a href={hrms} data-lightbox="gallery-aguadeluz">
-                  <div className="work-img">
-                    <img src={hrms} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">HRMS for OFFICE</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap ReactJS NodeJS PostgreSQL
-                          </span>{" "}
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <div className="container">
-                  <span className="detail">
-                    We developed an advanced Human Resource Management System
-                    (HRMS) designed to efficiently manage and maintain
-                    comprehensive records of office and employees. This system
-                    streamlines the tracking of employee information, equipment
-                    inventory, and related administrative tasks, ensuring
-                    seamless operations and enhanced productivity. The HRMS
-                    incorporates robust features for data management, and
-                    reporting, making it an indispensable tool for modern office
-                    environments.
-                  </span>
-                </div>
-                <a
-                  href={hrms1}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={hrms2}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={hrms3}
-                  data-lightbox="gallery-aguadeluz"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-6 ">
-              <div className="work-box">
-                <a href={school} data-lightbox="gallery-todo">
-                  <div className="work-img">
-                    <img src={school} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">School Management System</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap ReactJS NodeJs PostgreSQL
-                          </span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <div className="container">
-                  <span className="detail">
-                    Our school management system is developed to efficiently
-                    handle and manage all school-related records. This system is
-                    basically to maintains student records such as attendance,
-                    fees, admissions, and examinations but also streamlines
-                    administrative processes.
-                  </span>
-                </div>
-                <a
-                  href={school1}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={school2}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={school3}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={school4}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={school5}
-                  data-lightbox="gallery-todo"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-              </div>
-            </div>
-            <div className="col-md-6 ">
-              <div className="work-box">
-                <a href={bidsforce} data-lightbox="gallery-mf">
-                  <div className="work-img">
-                    <img src={bidsforce} alt="" className="img-fluid" />
-                  </div>
-                  <div className="work-content">
-                    <div className="row">
-                      <div className="col-sm-8">
-                        <h2 className="w-title">BidsForce</h2>
-                        <div className="w-more">
-                          <span className="w-ctegory">
-                            ReactJS NextJS PostgreSQL FastAPI Tailwind
-                          </span>
-                        </div>
-                      </div>
-                      <div className="col-sm-4">
-                        <div className="w-like">
-                          <span className="ion-ios-plus-outline"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <div className="container">
-                  <span className="detail">
-                    Bidsforce was developed to streamline and manage the bidding
-                    process efficiently. This platform includes comprehensive
-                    features to handle RFX/RFQ processes, ensuring smooth and
-                    transparent operations. It enables users to create and
-                    manage requests for quotations (RFQ) and requests for
-                    proposals (RFP), while also facilitating vendor evaluations
-                    and bid comparisons. The system supports secure document
-                    management, tracking of bid status, and automated
-                    notifications, which help in maintaining effective
-                    communication with vendors.
-                  </span>
-                </div>
-                {/* <a
-                  href={stock1}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a> */}                
               </div>
             </div>
           </div>
