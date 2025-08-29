@@ -54,7 +54,7 @@ class Portfolio extends React.Component {
             {/* Project E-Commerce */}
             <div className="col-md-6 ">
               <div className="work-box">
-                <a href={E_commerce} data-lightbox="gallery-aguadeluz">
+                <a href={E_commerce} data-lightbox="gallery-news">
                   <div className="work-img">
                     <img src={E_commerce} alt="" className="img-fluid" />
                   </div>
@@ -88,49 +88,49 @@ class Portfolio extends React.Component {
                 </div>
                 <a
                   href={E_commerce1}
-                  data-lightbox="gallery-aguadeluz"
+                  data-lightbox="gallery-news"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
                   href={E_commerce2}
-                  data-lightbox="gallery-aguadeluz"
+                  data-lightbox="gallery-news"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
                   href={E_commerce3}
-                  data-lightbox="gallery-aguadeluz"
+                  data-lightbox="gallery-news"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
                   href={E_commerce4}
-                  data-lightbox="gallery-aguadeluz"
+                  data-lightbox="gallery-news"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
                   href={E_commerce5}
-                  data-lightbox="gallery-aguadeluz"
+                  data-lightbox="gallery-news"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
                   href={E_commerce6}
-                  data-lightbox="gallery-aguadeluz"
+                  data-lightbox="gallery-news"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
                 </a>
                 <a
                   href={E_commerce7}
-                  data-lightbox="gallery-aguadeluz"
+                  data-lightbox="gallery-news"
                   style={{ display: "none" }}
                 >
                   jsx-a11y/anchor-has-content warning
