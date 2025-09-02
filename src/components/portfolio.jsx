@@ -44,7 +44,7 @@ class Portfolio extends React.Component {
             <div className="col-sm-12">
               <div className="title-box text-center">
                 <h3 className="title-a">Projects</h3>
-                <p className="subtitle-a">These are my recent projects.</p>
+                <p className="subtitle-a">These are my recent Work.</p>
                 <div className="line-mf"></div>
               </div>
             </div>
