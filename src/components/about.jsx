@@ -36,8 +36,8 @@ class About extends React.Component {
           content: (
             <p className="text-secondary">
               As a <strong>NodeJS</strong> and <strong>NextJS</strong>{" "}
-              developer, I have more than 2 years of experience in web
-              development. During these years, I have mostly worked with teams
+              developer, I have more than 2 years of experience in Web
+              Development. During these years, I have mostly worked with teams
               and sometimes alone. I developed scalable projects by optimizing
               workflows and enhancing data accessibility. Additionally, I have
               successfully implemented various features that significantly
